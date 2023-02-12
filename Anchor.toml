@@ -1,0 +1,15 @@
+[features]
+seeds = false
+
+[programs.devnet]
+example2 = "7cDsxrDrZTa6tBhKMcmKTuPj2qpZEDrNNtCR5ff7wLqy"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
